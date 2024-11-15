@@ -25,7 +25,7 @@ resource "aws_subnet" "public_1" {
 resource "aws_subnet" "public_2" {
   vpc_id                  = aws_vpc.main.id
   cidr_block              = "10.0.2.0/28" 
-  availability_zone       = "us-west-2"
+  availability_zone       = "eu-central-1b"
   map_public_ip_on_launch = true
 
   tags = {
